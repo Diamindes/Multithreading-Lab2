@@ -15,22 +15,22 @@ public class MPIJacobiWorker {
 
   public static final int ROOT_ID = 0;
 
-  int vectorDimension;
+  private int vectorDimension;
   private int myId;
 
   private double[] B;
   private double[] localB;
   private int[] partCountsB;
   private int[] partOffsetsB;
-  int myPartCountB;
-  int myPartOffsetB;
+  private int myPartCountB;
+  private int myPartOffsetB;
 
   private double[] g;
   private double[] localG;
   private int[] partCountsG;
   private int[] partOffsetsG;
-  int myPartCountG;
-  int myPartOffsetG;
+  private int myPartCountG;
+  private int myPartOffsetG;
 
   private double[] startX;
 
